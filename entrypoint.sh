@@ -18,7 +18,8 @@ if [[ ! -f /data/.factorio-setup ]]; then
     mkdir -p /tmp/factorio
     mkdir -p /data/bin
     tar -C /tmp/factorio -xvf /tmp/factorio.tar.gz
-    mv /tmp/factorio/*/* /data/
+    cp -r /tmp/factorio/*/* /data/
+    rm -rf /tmp/factorio /tmp/factorio.tar.gz
 
     touch /data/.factorio-setup
 fi
