@@ -7,6 +7,7 @@ ENV PGID 1000
 ENV FACTORIO_VERSION latest
 ENV SAVENAME save
 ENV RCON_PASSWORD adminadmin
+ENV RCON_PORT 34198
 
 COPY entrypoint.sh /entrypoint.sh
 CMD [ "/entrypoint.sh" ]
