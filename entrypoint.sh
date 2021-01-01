@@ -34,7 +34,6 @@ fi
 
 su abc -c "/data/bin/x64/factorio --server-settings /data/data/server-settings.json\
                                   --server-adminlist /data/data/server-admins.json\
-                                  --server-whitelist /data/data/server-whitelist.json\
                                   --server-banlist /data/data/server-banlist.json\
                                   --rcon-password $RCON_PASSWORD\
                                   --start-server /data/saves/$SAVENAME.zip"
